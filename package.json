@@ -1,0 +1,27 @@
+{
+  "name": "circlus-web-landing",
+  "version": "0.0.0",
+  "description": "A mobile app landing page for Local Detour.",
+  "main": "./app.js",
+  "config": {
+    "ip": "0.0.0.0",
+    "port": 8086
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "6.11.1",
+    "npm": ">=3.10.9"
+  },
+  "dependencies": {
+    "express": "4.15.4"
+  },
+  "author": "Marcus Hsu",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kiddkevin00/localdetour-web-landing.git"
+  },
+  "private": true
+}

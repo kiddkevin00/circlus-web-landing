@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+      "details": [
+        {
+            "appID": "AL3QQKJ8WD.com.circlus.consumer.main",
+            "paths": [ "*" ]
+        }
+      ]
+  }
+}
