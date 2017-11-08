@@ -10,7 +10,7 @@ const port = process.env.PORT || packageJson.config.port;
 const appleAppSiteAssociationContent = fs.readFileSync(path.resolve(__dirname, './public/', 'apple-app-site-association'));
 
 app.get('/apple-app-site-association', (req, res) => {
-  res.set('Content-Type', 'application/pkcs7-mime');
+  res.set('Content-Type', 'application/json');
 
   return res.status(200).send(appleAppSiteAssociationContent);
 });
