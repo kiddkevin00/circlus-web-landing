@@ -1,27 +1,21 @@
 const packageJson = require('./package.json');
 const express = require('express');
+const fs = require('fs');
 const path = require('path');
 
 
 const app = express();
 const ip = process.env.IP || packageJson.config.ip;
 const port = process.env.PORT || packageJson.config.port;
-
-app.use(express.static(path.resolve(__dirname, 'public/')));
+const appleAppSiteAssociationContent = fs.readFileSync(path.resolve(__dirname, './public/', 'apple-app-site-association'));
 
 app.get('/apple-app-site-association', (req, res) => {
-  return res.json({
-    "applinks": {
-      "apps": [],
-      "details": [
-        {
-          "appID": "AL3QQKJ8WD.com.circlus.consumer.main",
-          "paths": [ "*" ]
-        }
-      ]
-    }
-  });
+  res.set('Content-Type', 'application/json');
+
+  return res.status(200).send(appleAppSiteAssociationContent);
 });
+
+app.use(express.static(path.resolve(__dirname, 'public/')));
 
 // All routes should direct to the index.html
 app.route('/*')
