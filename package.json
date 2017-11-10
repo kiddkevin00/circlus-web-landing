@@ -1,6 +1,6 @@
 {
   "name": "circlus-web-landing",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A mobile app landing page for Local Detour.",
   "main": "./app.js",
   "config": {
@@ -21,7 +21,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git@github.com:kiddkevin00/localdetour-web-landing.git"
+    "url": "git@github.com:kiddkevin00/circlus-web-landing.git"
   },
   "private": true
 }
