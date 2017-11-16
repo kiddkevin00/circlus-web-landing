@@ -1,7 +1,7 @@
 {
   "name": "circlus-web-landing",
   "version": "0.0.1",
-  "description": "A mobile app landing page for Local Detour.",
+  "description": "A mobile app landing page for Circlus.",
   "main": "./app.js",
   "config": {
     "ip": "0.0.0.0",
