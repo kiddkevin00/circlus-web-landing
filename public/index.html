@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -33,11 +31,8 @@
         color: white !important;
       }
     </style>
-
   </head>
-
   <body id="page-top">
-
     <!-- Navigation -->
 
     <header class="masthead">
@@ -185,6 +180,18 @@
       </div>
     </footer>
 
+    <!-- Custom scripts for this deep linking -->
+    <script>
+      if (window.location.pathname === '/launch') {
+        window.location.href = 'CirclusNYC2017://';
+
+        setTimeout(function() {
+          // Link to the App Store should go here -- only fires if deep link fails
+          window.location = "https://itunes.apple.com/us/app/myapp/id123456789?ls=1&mt=8";
+        }, 500);
+      }
+    </script>
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
@@ -195,7 +202,5 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/new-age.min.js"></script>
-
   </body>
-
 </html>
