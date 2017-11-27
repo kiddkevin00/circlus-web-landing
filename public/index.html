@@ -183,7 +183,7 @@
     <!-- Custom scripts for this deep linking -->
     <script>
       if (window.location.pathname === '/launch') {
-        window.location.href = 'CirclusNYC2017://';
+        window.location.href = `CirclusNYC2017://${window.location.search}`;
 
 //        setTimeout(function() {
 //          // The link to the App Store should go here -- only fires if deep link fails.
