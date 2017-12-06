@@ -22,7 +22,7 @@ app.get('/apple-app-site-association', (req, res) => {
 
 app.use(express.static(path.resolve(__dirname, 'public/')));
 
-// All routes should direct to the index.html
+// All routes should direct to the index.pug
 app.route('/*')
   .get((req, res) => {
     let smartAppBannerArgument = 'https://circlus.herokuapp.com/';
