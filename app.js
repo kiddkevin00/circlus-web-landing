@@ -7,7 +7,7 @@ const path = require('path');
 
 const app = express();
 
-app.set('views', path.resolve(__dirname, 'views'));
+app.set('views', path.resolve(__dirname, 'views/'));
 app.set('view engine', 'pug');
 
 const ip = process.env.IP || packageJson.config.ip;
