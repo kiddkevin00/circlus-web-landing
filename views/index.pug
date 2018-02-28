@@ -101,7 +101,7 @@ html(lang="en")
             withCredentials: true,
             timeout: 5000
           });
-
+          // [TODO] Should have query string parser to parse correctly and check error code
           var authorizationCode = window.location.search.substring(6);
 
           axiosInstance.post('/bank-account/setup', { authorizationCode: authorizationCode })
